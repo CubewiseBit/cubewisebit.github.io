@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" aria-label="CubeBit">
+      <a class="navbar-brand" href="{{ site.url }}" aria-label="CubeBit">
         <img src="{{ '/assets/icon/logo-without-name.png?v=' | append: site.github.build_revision | relative_url }}" class="rounded float-start" height="32" alt="CubeBit">
         <span style="margin-left: 16px;">CubeBit</span>
       </a>
@@ -12,6 +12,38 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="{{ site.url }}">首页</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CubeBit-Booster
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">cubebit-api</a></li>
+              <li><a class="dropdown-item" href="#">cubebit-core</a></li>
+              <li><a class="dropdown-item" href="#">cubebit-exception</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">cubebit-bootstrap</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CubeBit-Composable
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">cubebit-authing</a></li>
+              <li><a class="dropdown-item" href="#">cubebit-gateway</a></li>
+              <li><a class="dropdown-item" href="#">cubebit-formable</a></li>
+              <li><a class="dropdown-item" href="#">cubebit-flowable</a></li>
+              <li><a class="dropdown-item" href="#">cubebit-message</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">cubeBit-deploy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">博客</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">关于我们</a>
           </li>
         </ul>
       </div>
