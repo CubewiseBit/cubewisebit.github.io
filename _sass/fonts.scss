@@ -25,7 +25,7 @@
 @font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 700;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_55_Regular_85_Blod.ttf")
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_55_Regular_85_Bold.ttf")
     format("truetype");
   font-display: swap;
 }
@@ -72,5 +72,5 @@
 
 body {
   font-family: "Alibaba_PuHuiTi", "Arial", "Microsoft YaHei", "黑体", "宋体",
-    sans-serif;
+    sans-serif !important;
 }

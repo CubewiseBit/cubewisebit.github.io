@@ -11,7 +11,7 @@ cd cubewisebit.github.io
 # 安装依赖
 bundle install
 # 编译并运行
-jekyll serve -l
+bundle exec jekyll serve -l
 # 打开浏览器预览
 open http://127.0.0.1:4000
 ```

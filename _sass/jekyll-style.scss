@@ -1,2 +1,19 @@
 @import "fonts";
+@import "highlight-style";
 @import "jekyll-container";
+
+blockquote {
+    border-left: 0.25rem solid #eaecef;
+    color: #6a737d;
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.task-list-item {
+  input {
+    margin-right: 0.5rem;
+  }
+}

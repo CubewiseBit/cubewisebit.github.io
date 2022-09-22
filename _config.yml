@@ -12,6 +12,7 @@ github_username:  CubewiseBit
 plugins:
   #- jekyll-remote-theme
   - jemoji
+  - jekyll-relative-links
 
 # 时区
 timezone: Asia/Shanghai
@@ -23,9 +24,9 @@ encoding: UTF-8
 # safe: true
 # source: [your repo's top level directory]
 # incremental: false
-# highlighter: rouge
-# gist:
-#   noscript: false
-# kramdown:
-#   math_engine: mathjax
-#   syntax_highlighter: rouge
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
