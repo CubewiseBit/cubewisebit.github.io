@@ -7,10 +7,21 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
   hljs.highlightAll();
-  hljs.initHighlightingOnLoad();
   hljs.initLineNumbersOnLoad();
 </script>
 
-<section>
-  {{ content }}
-</section>
+<div class="container-xxl my-md-4 bd-layout">
+  <aside class="bd-sidebar">
+    {% include docs/docs_side.html %}
+  </aside>
+  <main class="bd-main order-1"> 
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+      {% include docs/docs_toc.html %}
+    </div>
+    <section class="bd-content ps-lg-4">
+      {{ content }}
+    </section>
+  </main>
+</div>
+
+<script src="{{ '/assets/js/docs/toc.js?v=' | append: site.github.build_revision |relative_url }}"></script>

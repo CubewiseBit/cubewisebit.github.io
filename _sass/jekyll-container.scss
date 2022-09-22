@@ -1,12 +1,13 @@
-html, body {
-    height: 100%; 
+html,
+body {
+    height: 100%;
 }
 
 .header-container {
     position: fixed;
     width: 100%;
     height: auto;
-    min-height: 58px; 
+    min-height: 58px;
     z-index: 999;
 
     background: url('/assets/images/black_dot.png') repeat;
@@ -21,18 +22,18 @@ html, body {
     position: relative;
     top: 0;
     box-sizing: border-box;
-    min-height: 100% ;
+    min-height: 100%;
     padding-top: 58px;
 
     $content-padding: 16px;
     $footer-padding: 60px;
-    $footer-height: ($footer-padding) * 2 + 280px;
+    $footer-height: ($footer-padding) * 2+280px;
 
     .contant-container {
         padding-top: $content-padding;
         padding-bottom: $content-padding + $footer-height;
     }
-    
+
     .footer-container {
         padding-top: $footer-padding;
         padding-bottom: $footer-padding;
@@ -54,7 +55,7 @@ html, body {
     padding-right: 20px;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 576px) {
     .container-padding {
         padding-left: 40px;
         padding-right: 40px;

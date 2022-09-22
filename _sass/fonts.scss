@@ -1,76 +1,139 @@
 @font-face {
+  font-family: "Alibaba_PuHuiTi_CDN";
+  font-weight: 250;
+  src: url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/IYp_9DsJN2Xit5eZeWSZK.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/s1zgJ2dJrONoXmDTzW1En.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 250;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_35_Thin_35_Thin.ttf")
-    format("truetype");
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_35_Thin_35_Thin.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alibaba_PuHuiTi_CDN";
+  font-weight: 300;
+  src: url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/pjpaQVNg43NHNwl6LD-qy.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/xrWgabBdnke7N9HP2jfQq.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 300;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_45_Light_45_Light.ttf")
-    format("truetype");
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_45_Light_45_Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alibaba_PuHuiTi_CDN";
+  font-weight: 400;
+  src: url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/lj8lG1A0e3Cq6V4_7KUl1.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/eOUfddGcjQnt-v8ET85Bq.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 400;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_55_Regular_55_Regular.ttf")
-    format("truetype");
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_55_Regular_55_Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alibaba_PuHuiTi_CDN";
+  font-weight: 500;
+  src: url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/Ps9Poc2y6FgH581FRKaSg.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/O-m6f6aQkbkRV5o88AUIL.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 700;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_55_Regular_85_Bold.ttf")
-    format("truetype");
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_55_Regular_85_Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alibaba_PuHuiTi_CDN";
+  font-weight: 600;
+  src: url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/SsTRSaxfat7uc6nxJZeix.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/M7H8no5Vd_zne3wKyMPZF.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 500;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_65_Medium_65_Medium.ttf")
-    format("truetype");
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_65_Medium_65_Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alibaba_PuHuiTi_CDN";
+  font-weight: 700;
+  src: url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/1NpE_3AL_7rm4ncWXxGL2.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/A1--xgq7bN-oydYawhcAs.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 600;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_75_SemiBold_75_SemiBold.ttf")
-    format("truetype");
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_75_SemiBold_75_SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alibaba_PuHuiTi_CDN";
+  font-weight: 800;
+  src: url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/XXTvYCIb3ukKCxWfV3HNh.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/DW48Nq0G4U49P3d_djwIA.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 800;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_95_ExtraBold_95_ExtraBold.ttf")
-    format("truetype");
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_95_ExtraBold_95_ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alibaba_PuHuiTi_CDN";
+  font-weight: 900;
+  src: url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/tkUPA8RSL-rKSGuOdLGB6.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/3BD9Tn_syOuwDEevrMgsP.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 900;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_105_Heavy_105_Heavy.ttf")
-    format("truetype");
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_105_Heavy_105_Heavy.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alibaba_PuHuiTi_CDN";
+  font-weight: 1000;
+  src: url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/1b5ZCIS7WXIPZ6IaaFucy.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/dpXFPL5V4DCh/r68h_vx6gAlje9MDEGnUm.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Alibaba_PuHuiTi";
   font-weight: 1000;
-  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_115_Black_115_Black.ttf")
-    format("truetype");
+  src: url("../fonts/Alibaba_PuHuiTi/Alibaba_PuHuiTi_2.0_115_Black_115_Black.ttf") format("truetype");
   font-display: swap;
 }
 
 body {
-  font-family: "Alibaba_PuHuiTi", "Arial", "Microsoft YaHei", "黑体", "宋体",
+  font-family: "Alibaba_PuHuiTi_CDN", "Alibaba_PuHuiTi", "Arial", "Microsoft YaHei", "黑体", "宋体",
     sans-serif !important;
 }
