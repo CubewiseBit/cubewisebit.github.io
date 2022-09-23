@@ -1,10 +1,10 @@
 ---
 layout: docs
 title: Cubebit Booster Core
-permalink: /docs/cubebit-booster/cubebit-booster-core/
+permalink: /docs/cubebit-booster/cubebit-booster-core/string-util
 ---
 
-# Cubebit Booster Core
+# StringUtil
 
 快速开始
 

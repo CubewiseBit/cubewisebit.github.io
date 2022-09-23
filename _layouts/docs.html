@@ -2,6 +2,7 @@
 layout: default
 ---
 <!-- highlight -->
+<!-- https://highlightjs.org/ -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js" integrity="sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -9,6 +10,10 @@ layout: default
   hljs.highlightAll();
   hljs.initLineNumbersOnLoad();
 </script>
+
+<!-- lodash -->
+<!-- https://lodash.com/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" referrerpolicy="no-referrer"></script>
 
 <div class="container-xxl my-md-4 bd-layout">
   <aside class="bd-sidebar">
@@ -23,5 +28,3 @@ layout: default
     </section>
   </main>
 </div>
-
-<script src="{{ '/assets/js/docs/toc.js?v=' | append: site.github.build_revision |relative_url }}"></script>

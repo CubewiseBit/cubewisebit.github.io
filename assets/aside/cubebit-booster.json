@@ -1,0 +1,53 @@
+[
+    {
+        "title": "api",
+        "path": "/docs/cubebit-booster/cubebit-booster-api"
+    },
+    {
+        "title": "core",
+        "children": [
+            {
+                "title": "基础工具",
+                "children": [
+                    {
+                        "title": "StringUtil",
+                        "path": "/docs/cubebit-booster/cubebit-booster-core/string-util"
+                    },
+                    {
+                        "title": "CollectionUtil",
+                        "path": "/docs/cubebit-booster/cubebit-booster-core/collection-util"
+                    },
+                    {
+                        "title": "ListUtil",
+                        "path": "/docs/cubebit-booster/cubebit-booster-core/list-util"
+                    },
+                    {
+                        "title": "SetUtil",
+                        "path": "/docs/cubebit-booster/cubebit-booster-core/set-util"
+                    },
+                    {
+                        "title": "MapUtil",
+                        "path": "/docs/cubebit-booster/cubebit-booster-core/map-util"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "separator": true
+    },
+    {
+        "title": "bootstrap",
+        "tags": ["hot"],
+        "children": [
+            {
+                "title": "插件容器",
+                "path": "/docs/cubebit-booster/cubebit-booster-bootstrap/plugin-container"
+            },
+            {
+                "title": "Spring集成",
+                "path": "/docs/cubebit-booster/cubebit-booster-bootstrap/spring-integration"
+            }
+        ]
+    }
+]

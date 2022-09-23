@@ -1,5 +1,5 @@
 $(() => {
-  let parent = $("#TableOfContents");
+  let parent = $("#TocOfContents");
   let pre = parent;
   let preLevel = 1;
   $("section h2, section h3, section h4").each((_, header) => {
