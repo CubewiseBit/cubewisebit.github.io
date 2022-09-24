@@ -2,6 +2,8 @@
 ---
 
 $(() => {
+  const asideData = {{ site.data.docs.aside | jsonify }};
+
   const pathname = window.location.pathname;
 
   if (pathname.indexOf("docs") < 0) {
@@ -24,11 +26,8 @@ $(() => {
   $("#DocNavOfTitleSm").prepend(title);
   $("#DocNavOfTitleMd").text(title);
 
-  const basePath = pathname.substring(0, pathname.indexOf("/docs")) || "";
-  const schemaUrl = basePath + "/assets/aside/" + schema + ".json?v={{ site.github.build_revision }}";
-  $.getJSON(schemaUrl, (schemas) =>
-    appendSideItem(schemas, $("#DocNavOfContents"))
-  );
+  const basePath = "{{ '' | relative_url }}";
+  appendSideItem((asideData[schema] || []), $("#DocNavOfContents"))
 
   function appendSideItem(schemas, parent, isSub) {
     schemas.forEach((schema) => {
