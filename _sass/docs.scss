@@ -1,7 +1,5 @@
-a {
-    i {
-        margin-left: .3rem;
-    }
+i {
+    margin-left: .3rem;
 }
 
 blockquote {
@@ -21,6 +19,16 @@ blockquote {
 section {
     h1 {
         margin-bottom: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    &.bd-intro {
+        a, span {
+            color: #6a737d;
+        }
     }
 }
 

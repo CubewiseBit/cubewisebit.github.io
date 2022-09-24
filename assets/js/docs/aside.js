@@ -1,3 +1,6 @@
+---
+---
+
 $(() => {
   const pathname = window.location.pathname;
 
@@ -18,11 +21,11 @@ $(() => {
   const title = _.map(_.split(schema, "-"), (word) =>
     _.toLower(word) === "cubebit" ? "CubeBit" : _.capitalize(word)
   ).join(" ");
-  $("#DocNavOfTitleSm").text(title);
+  $("#DocNavOfTitleSm").prepend(title);
   $("#DocNavOfTitleMd").text(title);
 
   const basePath = pathname.substring(0, pathname.indexOf("/docs")) || "";
-  const schemaUrl = basePath + "/assets/aside/" + schema + ".json";
+  const schemaUrl = basePath + "/assets/aside/" + schema + ".json?v={{ site.github.build_revision }}";
   $.getJSON(schemaUrl, (schemas) =>
     appendSideItem(schemas, $("#DocNavOfContents"))
   );
@@ -34,7 +37,9 @@ $(() => {
         parent.append(li);
       } else if (!!schema.children && schema.children.length > 0) {
         // 目录
-        const collapseId = schema.title;
+
+        // dom id 必须以字母开头，并且对长度有限制
+        const collapseId = "collapse-" + new Date().getTime().toString(16);
 
         const li = $(
           "<li style='margin-left: " + (isSub ? 16 : 0) + "px;'></li>"
@@ -60,7 +65,7 @@ $(() => {
 
         appendSideItem(schema.children, ul, true);
 
-        appendTags(li, schema.tags);
+        appendTags(collapsedBtn, schema.tags);
       } else if (!!schema.path) {
         const path = schema.disabled ? "#" : basePath + schema.path;
         const li = $("<li></li>");
@@ -104,7 +109,7 @@ $(() => {
     (tags || []).forEach((tag) => {
       switch(tag) {
         case "hot": {
-          $(dom).append("<i class='fa-solid fa-fire' style='color: #dc3545;'></i>");
+          $(dom).append("<i class='bi bi-fire' style='color: #dc3545;'></i>");
           break;
         }
         default: break;

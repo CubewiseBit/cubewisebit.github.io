@@ -19,10 +19,19 @@ layout: default
   <aside class="bd-sidebar">
     {% include docs/docs_side.html %}
   </aside>
-  <main class="bd-main order-1"> 
+  <main class="bd-main order-1">
     <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
       {% include docs/docs_toc.html %}
     </div>
+    <section class="bd-intro ps-lg-4 mb-4 mb-lg-0 mb-md-0">
+      {% if !!page.github %}
+      <i class="bi bi-github" style="margin: auto .2rem auto 0"></i>
+      <a href="{{ page.github }}" target="_blank">View On GitHub</a>
+      {% else if !!page.permalink %}
+      <i class="bi bi-bookmark-fill" style="margin: auto .2rem auto 0"></i>
+      <a href="{{ page.permalink | relative_url }}">{{ page.permalink }}</a>
+      {% endif %}
+    </section>
     <section class="bd-content ps-lg-4">
       {{ content }}
     </section>
