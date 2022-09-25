@@ -1,3 +1,8 @@
+{% assign assets_base_url = site.url %} 
+{% if site.cdn.jsdelivr.enabled %} 
+{% assign assets_base_url = site.cdn.jsdelivr.url %} 
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
@@ -6,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=1">
     <link rel="shortcut icon" href="{{ '/assets/icon/favicon.ico?v=' | append: site.github.build_revision | relative_url }}">
+    <!-- style.css是动态的，不可使用jsdelivr加速 -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
     <!-- https://cdnjs.com/ -->
