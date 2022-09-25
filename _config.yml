@@ -35,4 +35,5 @@ cdn:
   jsdelivr:
     # github部署时，设置为true，使用jsdelivr的cdn
     enabled: true
-    url: https://cdn.jsdelivr.net/gh/CubewiseBit/CubewiseBit.github.io@master
+    # jsdelivr域名可能存在变化，可在https://www.jsdelivr.com查看
+    url: https://gcore.jsdelivr.net/gh/CubewiseBit/CubewiseBit.github.io@main

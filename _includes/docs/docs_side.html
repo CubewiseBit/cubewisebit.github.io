@@ -1,8 +1,3 @@
-{% assign assets_base_url = site.url %} 
-{% if site.cdn.jsdelivr.enabled %} 
-{% assign assets_base_url = site.cdn.jsdelivr.url %} 
-{% endif %}
-
 <button class="btn btn-sm bd-sidebar-toggle d-md-none py-0 px-1 order-3 collapsed mb-4 mb-lg-0 mb-md-0" type="button"
   data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
   aria-label="Toggle docs navigation">
@@ -33,4 +28,4 @@
   <ul id="DocNavOfContents" class="list-unstyled mb-0 py-3 pt-md-1"></ul>
 </nav>
 
-<script src="{{ assets_base_url }}{{ '/assets/js/docs/aside.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script src="{{ '/assets/js/docs/aside.js?v=' | append: site.github.build_revision | relative_url }}"></script>
