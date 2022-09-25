@@ -3,15 +3,30 @@ permalink: /404.html
 layout: default
 ---
 
+<!-- highlight -->
+<!-- https://highlightjs.org/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"
+  integrity="sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"
+  integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  hljs.highlightAll();
+  hljs.initLineNumbersOnLoad();
+</script>
+
 <style type="text/css" media="screen">
   .container-404 {
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
   }
-  .container-404 > h1 {
+
+  .container-404>h1 {
     margin: 30px 0;
-    font-size: 4em;
+    font-size: 6em;
     line-height: 1;
     letter-spacing: -1px;
   }
@@ -23,7 +38,19 @@ layout: default
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 
-  <p class="text-muted mt-5">
+  <section>
+    <pre>
+      <code class="language-java" style="text-align:start;">// TODO: The requested page was stolen!
+public class PageNotFoundException extends RuntimeException {
+  public PageNotFoundException(String message) {
+    super(message);
+  }
+}
+      </code>
+    </pre>
+  </section>
+
+  <p class="text-muted mb-5">
     <a class="btn btn-outline-secondary" href="{{ site.url }}" role="button">去首页</a>
   </p>
 </div>

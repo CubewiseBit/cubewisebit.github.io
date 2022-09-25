@@ -1,5 +1,9 @@
 [
     {
+        "title": "快速开始",
+        "path": "/docs/cubebit-booster/quick-start"
+    },
+    {
         "title": "api",
         "path": "/docs/cubebit-booster/cubebit-booster-api"
     },
