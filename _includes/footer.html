@@ -1,8 +1,13 @@
+{% assign assets_base_url = site.url %} 
+{% if site.cdn.jsdelivr.enabled %} 
+{% assign assets_base_url = site.cdn.jsdelivr.url %} 
+{% endif %}
+
 <div class="container">
     <div class="row">
         <div class="col-lg-4 mb-3">
             <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="{{ site.url }}" aria-label="CubeBit">
-                <img src="{{ '/assets/icon/logo-without-name.png?v=' | append: site.github.build_revision | relative_url }}" class="rounded float-start" height="32" alt="CubeBit">
+                <img src="{{ assets_base_url }}{{ '/assets/icon/logo-without-name.png?v=' | append: site.github.build_revision | relative_url }}" class="rounded float-start" height="32" alt="CubeBit">
                 <span class="fs-5" style="margin-left: 8px;">CubeBit</span>
             </a>
             <ul class="list-unstyled small text-muted mt-3">

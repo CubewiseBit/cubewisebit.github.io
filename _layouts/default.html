@@ -10,7 +10,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=1">
-    <link rel="shortcut icon" href="{{ '/assets/icon/favicon.ico?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" href="{{ assets_base_url }}{{ '/assets/icon/favicon.ico?v=' | append: site.github.build_revision | relative_url }}">
     <!-- style.css是动态的，不可使用jsdelivr加速 -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
@@ -50,5 +50,5 @@
     </div>
   </body>
 
-  <script src="{{ '/assets/js/style.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  <script src="{{ assets_base_url }}{{ '/assets/js/style.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 </html>

@@ -1,7 +1,12 @@
+{% assign assets_base_url = site.url %} 
+{% if site.cdn.jsdelivr.enabled %} 
+{% assign assets_base_url = site.cdn.jsdelivr.url %} 
+{% endif %}
+
 <nav class="navbar navbar-dark navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="{{ site.url }}" aria-label="CubeBit">
-        <img src="{{ '/assets/icon/logo-without-name.png?v=' | append: site.github.build_revision | relative_url }}" class="rounded float-start" height="32" alt="CubeBit">
+        <img src="{{ assets_base_url }}{{ '/assets/icon/logo-without-name.png?v=' | append: site.github.build_revision | relative_url }}" class="rounded float-start" height="32" alt="CubeBit">
         <span style="margin-left: 16px;">CubeBit</span>
       </a>
       
