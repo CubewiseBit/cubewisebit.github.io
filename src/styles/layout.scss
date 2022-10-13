@@ -1,7 +1,3 @@
-.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
-  display: none;
-}
-
 .navbar {
   .navbar__title {
     font-size: 20px;
@@ -16,9 +12,9 @@
 .navbar--dark {
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
 
-  .navbar__item {
-    color: var(--bs-navbar-color);
-  }
+  // .navbar__item {
+  //   color: var(--bs-navbar-color);
+  // }
 }
 
 .navbar,
