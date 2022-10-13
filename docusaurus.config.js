@@ -15,7 +15,7 @@ async function createConfig() {
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/favicon.ico',
+    favicon: 'images/favicon.ico',
   
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
@@ -158,7 +158,7 @@ async function createConfig() {
               items: [
                 {
                   label: 'Tutorial',
-                  to: '/docs/intro',
+                  to: '/docs/cubebit-booster/quickstart',
                 },
               ],
             },
