@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcubewisebit_github_io=self.webpackChunkcubewisebit_github_io||[]).push([[1659],{4056:(e,t,i)=>{i.r(t),i.d(t,{default:()=>c});var u=i(1594),b=i(7294);const c=()=>b.createElement(u.Z,{title:"\u5173\u4e8e\u6211\u4eec"},b.createElement("main",null,"\u5173\u4e8e\u6211\u4eec"))}}]);

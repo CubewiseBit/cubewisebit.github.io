@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcubewisebit_github_io=self.webpackChunkcubewisebit_github_io||[]).push([[4121],{8070:e=>{e.exports=JSON.parse('[{"label":"CubeBit","permalink":"/docs/tags/cube-bit","count":1},{"label":"Booster","permalink":"/docs/tags/booster","count":1},{"label":"Utilities","permalink":"/docs/tags/utilities","count":1}]')}}]);
